@@ -8,6 +8,7 @@ var Chat = function(socket) {
   this.socket = socket;
 };
 
+//emit socket function -> message | changeRoom
 Chat.prototype.sendMessage = function(room, text) {
   var message = {
 					room: room,

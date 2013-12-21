@@ -3,7 +3,6 @@ var socket = io.connect();
 //handles client-side initiation of Socket.io event handling
 $(document).ready(function() {
 	var chatApp = new Chat(socket);
-  	
   	socket.on('nameResult', function(result) {
   	//Display the results of a name change attempt
     var message;
